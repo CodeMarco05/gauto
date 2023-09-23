@@ -11,9 +11,12 @@ class style():
 
 @click.group()
 def gauto():
-    'gauto is a automated git upload assistend.'
+    'gauto is an automated git upload assistend.'
     pass
 
+
+# for generating a exe with pyinstaller
+# pyinstaller gauto.py --onefile
 
 # Upload command for git
 @gauto.command()
@@ -29,10 +32,12 @@ def upload(message, branch):
     print()
     print(style.GREEN + 'Upload command finished. Please look for errors during the Process!' + style.RESET)
 
+
 # Download command for git
 @gauto.command()
 def pull():
     print()
+
 
 if __name__ == '__main__':
     gauto()
