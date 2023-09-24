@@ -1,0 +1,9 @@
+{
+  "branches": [
+    {
+      "push-default-branch": "master",
+      "pull-default-branch": "master"
+    }
+  ],
+  "push-default-message": "timestamp"
+}
